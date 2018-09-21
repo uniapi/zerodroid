@@ -13,7 +13,7 @@
       And the smallest answer is the trailing zeros count that {n} number has in the base {b}
 */
 
-function zerodroid(number, base) {
+function getZerosCount(number, base) {
   let num = number;              // the copy of number
   let div = base;                // the copy of base
   const lim = Math.floor(div/2); // the search limit for factorization
@@ -60,4 +60,6 @@ function zerodroid(number, base) {
   return zeros;
 }
 
-export { zerodroid }
+// export { zerodroid }
+
+module.exports = getZerosCount;
